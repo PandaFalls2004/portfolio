@@ -20,8 +20,10 @@ body {
     flex:1
     
     
+    
   }
   nav a.current{
     border-bottom: 0.4em solid oklch(90% 2% 200);
     padding-bottom: calc(10px - 0.4em);
   }
+  
