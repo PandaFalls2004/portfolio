@@ -41,5 +41,6 @@ body {
 
   nav a:hover{
     border-bottom: 0.4em solid oklch(from var(--color-accent));
+    padding-bottom: calc(10px - 0.4em);
   }
   
