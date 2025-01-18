@@ -6,3 +6,9 @@ body {
     max-width: 100ch;
     margin-inline: auto;
   }
+  nav{
+    display: flex;
+  }
+  nav a{
+    flex:1
+  }
