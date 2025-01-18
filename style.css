@@ -40,6 +40,6 @@ body {
   }
 
   nav a:hover{
-    border-bottom: 0.4em solid var(oklch(65% 50% 0));
+    border-bottom: 0.4em solid oklch(from var(--color-accent));
   }
   
