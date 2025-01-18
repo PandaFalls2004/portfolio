@@ -57,7 +57,7 @@ body {
     max-width: 600px;
   }
   label{
-    grid-column: 1/-1;
+    grid-column: 1;
     display: grid;
   }
   input, textarea, button{
