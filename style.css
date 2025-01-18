@@ -54,13 +54,14 @@ body {
     display: grid;
     grid-template-columns: auto 1fr;
     gap: 1em;
+    max-width: 600px;
   }
   label{
-    grid-column: 1;
+    grid-column: 1/-1;
     display: grid;
   }
   input, textarea, button{
-    grid-column: 2;
+    grid-column: 1/-1;
   }
   button{
     grid-column: 1/-1;
