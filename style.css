@@ -6,6 +6,10 @@ body {
     max-width: 100ch;
     margin-inline: auto;
   }
+
+  :root{
+    --color-accent: var(oklch(65% 50% 0));
+  }
   nav{
     display: flex;
   
@@ -19,6 +23,7 @@ body {
     flex: 1;
     text-decoration: none;
     text-align: center;
+    
 
     color: inherit;
     padding: .5em;
@@ -31,5 +36,9 @@ body {
   nav a.current{
     border-bottom: 0.4em solid oklch(90% 2% 200);
     padding-bottom: calc(10px - 0.4em);
+  }
+
+  nav a:hover{
+    border-bottom: 0.4em solid var(--color-accent);
   }
   
