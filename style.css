@@ -7,8 +7,12 @@ body {
     margin-inline: auto;
   }
 
-  html{
-    --color-accent: var(oklch(65% 50% 0));
+  html {
+    --color-accent: oklch(65% 50% 0); 
+  }
+  
+  
+  html {
     accent-color: var(--color-accent);
   }
   
@@ -43,6 +47,7 @@ body {
   nav a:hover{
     border-bottom: 0.4em solid var(--color-accent);
     padding-bottom: calc(10px - 0.4em);
-    color: var(--color-accent);
+    background-color: oklch(95% 5% 0);
+    
   }
   
