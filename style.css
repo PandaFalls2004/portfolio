@@ -19,6 +19,7 @@ body {
   nav a{
     flex:1
     
+    
   }
   nav a.current{
     border-bottom: 0.4em solid oklch(90% 2% 200);
