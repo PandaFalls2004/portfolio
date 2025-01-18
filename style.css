@@ -7,9 +7,10 @@ body {
     margin-inline: auto;
   }
 
-  :root{
+  html{
     --color-accent: var(oklch(65% 50% 0));
   }
+  
   nav{
     display: flex;
   
@@ -39,6 +40,6 @@ body {
   }
 
   nav a:hover{
-    border-bottom: 0.4em solid var(--color-accent);
+    border-bottom: 0.4em solid var(oklch(65% 50% 0));
   }
   
