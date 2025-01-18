@@ -9,6 +9,7 @@ body {
 
   html{
     --color-accent: var(oklch(65% 50% 0));
+    accent-color: var(--color-accent);
   }
   
   nav{
@@ -40,7 +41,8 @@ body {
   }
 
   nav a:hover{
-    border-bottom: 0.4em solid oklch(from var(--color-accent));
+    border-bottom: 0.4em solid var(--color-accent);
     padding-bottom: calc(10px - 0.4em);
+    color: var(--color-accent);
   }
   
