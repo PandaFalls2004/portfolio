@@ -8,7 +8,8 @@ body {
   }
 
   html {
-    --color-accent: oklch(65% 50% 0); 
+    --color-accent: oklch(65% 50% 0);
+    color-scheme: dark;
   }
   
   
@@ -22,7 +23,8 @@ body {
     
     
     margin-bottom: 5em;
-    border-bottom: 1px solid oklch(80% 3% 200); 
+    /* border-bottom: 1px solid oklch(80% 3% 200);  */
+    border-bottom-color: oklch(50% 10% 200 / 40%);
   }
   
   nav a {
