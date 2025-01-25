@@ -3,7 +3,7 @@ console.log('IT’S ALIVE!');
 function $$(selector, context = document) {
   return Array.from(context.querySelectorAll(selector));
 }
-const ARE_WE_HOME = document.documentElement.classList.contains('home');
+// const ARE_WE_HOME = document.documentElement.classList.contains('home');
 
 // let navLinks=$$("nav a");
 
