@@ -14,9 +14,9 @@ const ARE_WE_HOME = document.documentElement.classList.contains('home');
 // currentLink?.classList.add('current');
 let pages = [
     { url: '', title: 'Home' },
-    { url: 'projects/', title: 'Projects' },
-    { url: 'contact/', title: 'Contact' }, 
-    { url: 'resume/', title: 'Resume' },
+    { url: 'projects', title: 'Projects' },
+    { url: 'contact', title: 'Contact' }, 
+    { url: 'resume', title: 'Resume' },
     { url: 'https://github.com/PandaFalls2004', title: 'Github' }
   ];
 
