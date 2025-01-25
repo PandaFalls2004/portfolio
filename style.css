@@ -9,7 +9,7 @@ body {
 
   html {
     --color-accent: oklch(65% 50% 0);
-    color-scheme: light dark;
+    color-scheme:light dark;
   }
   
   
@@ -49,7 +49,8 @@ body {
   nav a:hover{
     border-bottom: 0.4em solid var(--color-accent);
     padding-bottom: calc(10px - 0.4em);
-    background-color: oklch(95% 5% 0);
+    background-color: (in oklch, var(--color-accent), canvas 85%);
+    /* background-color: oklch(50% 5% 0); */
     
   }
   form{
@@ -123,6 +124,17 @@ body {
     transform: translateY(-5px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
+  .color-scheme {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 80%;
+    font-family: inherit;
+}
+input, textarea, button, select {
+  font-family: inherit;
+}
+
 
   
   

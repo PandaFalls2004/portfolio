@@ -43,3 +43,43 @@ for (let p of pages) {
     // const ARE_WE_HOME = document.documentElement.classList.contains('home');
     // url = !ARE_WE_HOME && !url.startsWith('http') ? '../' + url : url;
   }
+  document.body.insertAdjacentHTML(
+    'afterbegin',
+    `
+      <label class="color-scheme">
+          Theme:
+          <select>
+              <option>Automatic</option>
+              <option> Light</option>
+              <option> Dark</option>
+          </select>
+      </label>`
+  );
+//   select.addEventListener('input', function (event) {
+//     console.log('color scheme changed to', event.target.value);
+//     document.documentElement.style.setProperty('color-scheme', event.target.value);
+//   });
+//   document.documentElement.style.setProperty('color-scheme', event.target.value);
+const select = document.querySelector('.color-scheme');
+select.addEventListener('input', function (event) {
+    console.log('color scheme changed to', event.target.value);
+    document.documentElement.style.setProperty('color-scheme', event.target.value);
+  });
+  function updateColorScheme(value) {
+    document.documentElement.style.setProperty('color-scheme', value);
+    select.value = value;  // Update the select element to reflect the current scheme
+  }
+
+  // Check if there's a saved preference in localStorage and apply it
+  if ('colorScheme' in localStorage) {
+    updateColorScheme(localStorage.colorScheme);
+  }
+
+  // Add an event listener for the 'input' event
+  select.addEventListener('input', function (event) {
+    console.log('color scheme changed to', event.target.value);
+
+    // Update the color scheme and store the preference in localStorage
+    updateColorScheme(event.target.value);
+    localStorage.colorScheme = event.target.value;
+  });
