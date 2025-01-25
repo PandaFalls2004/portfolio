@@ -14,7 +14,7 @@ function $$(selector, context = document) {
 // currentLink?.classList.add('current');
 let pages = [
     { url: '', title: 'Home' },
-    { url: 'projects/index.html', title: 'Projects' },
+    { url: 'projects/', title: 'Projects' },
     { url: 'contact/', title: 'Contact' }, 
     { url: 'resume/', title: 'Resume' },
     { url: 'https://github.com/PandaFalls2004', title: 'Github' }
@@ -28,9 +28,9 @@ for (let p of pages) {
     // TODO create link and add it to nav
     const ARE_WE_HOME = document.documentElement.classList.contains('home');
     url = !ARE_WE_HOME && !url.startsWith('http') ? '../' + url : url;
-    if (!ARE_WE_HOME && !url.startsWith('http')) {
-        url = '../' + url;
-      }
+    // if (!ARE_WE_HOME && !url.startsWith('http')) {
+    //     url = '../' + url;
+    //   }
     let a = document.createElement('a');
     a.href = url;
     a.textContent = title;
