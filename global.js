@@ -26,6 +26,7 @@ for (let p of pages) {
     let url = p.url;
     let title = p.title;
     // TODO create link and add it to nav
+    // nav.insertAdjacentHTML('beforeend', `<a href="${url}">${title}</a>`);
     const ARE_WE_HOME = document.documentElement.classList.contains('home');
     url = !ARE_WE_HOME && !url.startsWith('http') ? '../' + url : url;
     // if (!ARE_WE_HOME && !url.startsWith('http')) {
@@ -37,10 +38,10 @@ for (let p of pages) {
     if (a.host === location.host && a.pathname === location.pathname) {
         a.classList.add('current');
       }
-      a.classList.toggle(
-        'current',
-        a.host === location.host && a.pathname === location.pathname
-      );
+    //   a.classList.toggle(
+    //     'current',
+    //     a.host === location.host && a.pathname === location.pathname
+    //   );
     nav.append(a);
     // const ARE_WE_HOME = document.documentElement.classList.contains('home');
     // url = !ARE_WE_HOME && !url.startsWith('http') ? '../' + url : url;
