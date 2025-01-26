@@ -18,7 +18,7 @@ let pages = [
     { url: 'contact/', title: 'Contact' }, 
     { url: 'resume/', title: 'Resume' },
     { url: 'https://github.com/PandaFalls2004', title: 'Github' }
-  ];
+  ]
 
 let nav = document.createElement('nav');
 document.body.prepend(nav);
