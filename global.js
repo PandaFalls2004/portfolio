@@ -86,3 +86,52 @@ select.addEventListener('input', function (event) {
     updateColorScheme(event.target.value);
     localStorage.colorScheme = event.target.value;
   });
+// Fetch JSON data from a given URL
+export async function fetchJSON(url) {
+    try {
+        const response = await fetch(url);
+        
+        if (!response.ok) {
+            throw new Error(`Failed to fetch projects: ${response.statusText}`);
+        }
+
+        const data = await response.json();
+        return data;
+    } catch (error) {
+        console.error('Error fetching or parsing JSON data:', error);
+    }
+}
+
+// Render projects dynamically on the page
+export function renderProjects(projects, containerElement) {
+    if (!containerElement) {
+        console.error('Invalid container element');
+        return;
+    }
+
+    // Clear existing content to avoid duplication
+    containerElement.innerHTML = '';
+
+    // Loop through each project and create an article
+    projects.forEach(project => {
+        const article = document.createElement('article');
+
+        // Handle missing data gracefully
+        const title = project.title || 'Untitled Project';
+        const image = project.image ? `<img src="${project.image}" alt="${title}">` : '';
+        const description = project.description || 'No description available.';
+
+        // Set the innerHTML with dynamic content
+        article.innerHTML = `
+            <h3>${title}</h3>
+            ${image}
+            <p>${description}</p>
+        `;
+
+        // Append the article to the container
+        containerElement.appendChild(article);
+    });
+}
+
+
+
