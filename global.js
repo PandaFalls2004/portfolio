@@ -138,6 +138,10 @@ export function renderProjects(projects, containerElement) {
         console.error('Element with class "projects-title" not found.');
     }
 }
+export async function fetchGitHubData(username) {
+    // return statement here
+    return fetchJSON(`https://api.github.com/users/${username}`);
+  }
 
 
 
