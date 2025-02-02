@@ -118,7 +118,7 @@ export function renderProjects(projects, containerElement) {
 
         // Handle missing data gracefully
         const title = project.title || 'Untitled Project';
-        const image = project.image ? `<img src="${project.image}" alt="${title}">` : '';
+        const image = project.image ? `<img src="${project.image}" alt="${project.title || 'Project Image'}" style="max-width: 150px; height: auto;">` : '';
         const description = project.description || 'No description available.';
 
         // Set the innerHTML with dynamic content
