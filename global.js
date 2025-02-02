@@ -131,6 +131,12 @@ export function renderProjects(projects, containerElement) {
         // Append the article to the container
         containerElement.appendChild(article);
     });
+    const projectCountElement = document.querySelector('.projects-title');
+    if (projectCountElement) {
+        projectCountElement.textContent = `Projects (${projects.length})`;
+    } else {
+        console.error('Element with class "projects-title" not found.');
+    }
 }
 
 
