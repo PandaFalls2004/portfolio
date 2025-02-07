@@ -1,61 +1,73 @@
 [
     {
-        "title": "Lorem ipsum dolor sit.",
+        "title": "DSC 106 Project 1.",
+        "year":"2025",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda quod voluptates modi fuga atque! Vel saepe velit adipisci ratione nam dolore, impedit quos explicabo error nihil animi quam eius cumque."
+        "description": "Creating a static visualization of rain patterns of 6 cities and their location near the equator."
     },
     {
-        "title": "Deleniti modi veritatis delectus.",
+        "title": "DSC 106 Project 2.",
+        "year":"2025",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Labore non neque maxime ratione. Dolorem, eos. Deleniti itaque ipsam quae quisquam animi temporibus dignissimos explicabo doloremque, minus, maxime voluptate suscipit odio tempora quod quidem quam maiores, voluptatem esse autem!"
+        "description": "Creating an earnest and deceptive visualization for clinical data."
     },
     {
-        "title": "Dignissimos aut laudantium vero!",
+        "title": "DSC 80 Data Life Cycle Project",
+        "year":"2024",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Est eum perspiciatis accusantium error cupiditate pariatur optio suscipit vitae earum placeat excepturi dolorum explicabo distinctio ullam unde molestiae sit beatae minima dolore praesentium, deserunt animi nulla? Delectus, cum dolores."
+        "description": "Working with data from yelp to be able to predict ratings of restaraunts."
     },
     {
-        "title": "Eum, consequatur. Nesciunt, quod?",
+        "title": "ecDNA Lab",
+        "year":"2024",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Quo distinctio corrupti libero, quibusdam numquam velit facere quia voluptas. Et dolorem dolores aliquid corrupti eum corporis quisquam, voluptatem repellat porro quibusdam doloremque omnis, labore impedit nesciunt cupiditate quo facilis!"
+        "description": "Analysis of micro-homologies in ecDNA."
     },
     {
-        "title": "Explicabo eos dolore aliquam.",
+        "title": "Research Paper",
+        "year":"2024",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Et, at placeat? Delectus eius, magni facere iure ducimus corrupti illum. Nulla eaque quibusdam porro perferendis minima dignissimos ad illo dolor laborum voluptas velit, praesentium voluptatibus quis. Dicta, quo maiores?"
+        "description": "Reserach proposal paper for the ecDNA lab."
     },
     {
-        "title": "Esse est quibusdam veritatis!",
+        "title": "Research Poster",
+        "year":"2024",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Nulla facilis hic animi ratione excepturi obcaecati, nemo vel ullam exercitationem explicabo ipsa nihil fugiat corrupti vitae quam tempora aperiam recusandae dolorem repellat aspernatur quis laudantium alias esse? Odio, placeat!"
+        "description": "Research poster to present at research conference."
     },
     {
-        "title": "Id sit possimus odio.",
+        "title": "DSC 20 Projext",
+        "year":"2023",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Eligendi facere qui debitis, dolorem fugiat necessitatibus consequuntur quam ad modi quibusdam voluptates a autem esse ea itaque reprehenderit! Deserunt, in quod! Mollitia reiciendis atque consectetur. Nihil, omnis! Cum, eligendi."
+        "description": "Project for DSC 20."
     },
     {
-        "title": "Esse quod voluptatem magni.",
+        "title": "DSC 10 Midterm Project",
+        "year":"2022",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Error tenetur ducimus voluptas architecto voluptatem! Explicabo, assumenda a dignissimos sequi quod ad? Rerum consequuntur odio distinctio nesciunt. Perspiciatis veniam id maxime fugit eligendi repellat vel impedit quod ab. Cum."
+        "description":" DSC 10 midterm project"
     },
     {
-        "title": "Minima porro consectetur mollitia?",
+        "title": "DSC 10 Final Project",
+        "year":"2022",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Libero et quaerat dolorem numquam autem reprehenderit dicta, voluptates nam commodi. Vel, itaque aspernatur quos repellendus inventore nihil architecto deleniti est alias sed quisquam deserunt corrupti numquam distinctio animi aut."
+        "description": "DSC 1O final project analyzing and manipulating spotify data."
     },
     {
-        "title": "Voluptate a temporibus molestiae.",
+        "title": "Calculator Project.",
+        "year":"2022",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Esse omnis libero voluptatum vitae cum, quibusdam, aperiam id laborum minus rerum fugiat dolorum nostrum reprehenderit illum? Consequuntur autem veritatis at. Excepturi, asperiores. Excepturi harum officiis asperiores, consequatur quae consectetur?"
+        "description":"Coding a calculator in python"
     },
     {
-        "title": "Fugit voluptates facilis nemo.",
+        "title": "Hangman Project",
+        "year":"2021",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
-        "description": "Exercitationem eum, eos iure tempora saepe illum recusandae cumque nisi soluta alias! Possimus deleniti autem quis, expedita sapiente eaque optio dolores exercitationem facere maiores unde officia atque earum quia magnam."
+        "description": "Coding a hangman game in java"
     },
     {
-        "title": "Velit aliquam itaque non.",
+        "title": "Project 12",
+        "year":"2022",
         "image": "https://vis-society.github.io/labs/2/images/empty.svg",
         "description": "Eum ipsam nobis deleniti, fugiat porro modi distinctio harum sint laborum impedit et fuga recusandae quod odit necessitatibus atque obcaecati hic, magni possimus natus exercitationem. Quod debitis iusto dolore dignissimos?"
     }
