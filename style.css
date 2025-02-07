@@ -140,11 +140,41 @@ input, textarea, button, select {
 
   overflow: visible;
 }
-legend{
-  display:grid;
-  grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+/* legend{
+  display: grid;
+  /* grid-template-columns: repeat(auto-fill, minmax(9em, 1fr)); */
 
+/* } */ */
+.legend {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(9em, 1fr));
+  list-style: none;
+  padding: 1em;
+  margin: 1em 0;
+  gap: 0.5em;
+  border: 2px solid #ccc; /* Adds a border around the legend */
+  border-radius: 8px; /* Rounds the corners slightly */
+  background-color: #f9f9f9; /* Light background for contrast */
 }
+
+.legend-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+  font-family: Arial, sans-serif;
+}
+
+.swatch {
+  width: 1em;
+  height: 1em;
+  background-color: var(--color);
+  border-radius: 50%;
+  display: inline-block;
+  border: 1px solid #000; /* Adds a border around the swatch for clarity */
+}
+
+
+
 
 
 
