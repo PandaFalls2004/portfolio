@@ -120,12 +120,14 @@ export function renderProjects(projects, containerElement) {
         const title = project.title || 'Untitled Project';
         const image = project.image ? `<img src="${project.image}" alt="${project.title || 'Project Image'}" style="max-width: 150px; height: auto;">` : '';
         const description = project.description || 'No description available.';
+        const year= project.year || "No year";
 
         // Set the innerHTML with dynamic content
         article.innerHTML = `
             <h2>${title}</h2>
             ${image}
             <p>${description}</p>
+            ${year}
         `;
 
         // Append the article to the container
