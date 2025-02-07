@@ -8,7 +8,7 @@ let arc = arcGenerator({
     startAngle: 0,
     endAngle: 2 * Math.PI,
   });
-d3.select('svg').append('path').attr('d', arc).attr('fill', 'red'); 
+ 
 // let data = [1, 2];
 // let data = [1, 2, 3, 4, 5, 5];
 let data = [
@@ -56,5 +56,21 @@ data.forEach((d, idx) => {
           .html(`<span class="swatch"></span> ${d.label} <em>(${d.value})</em>`) // set the inner html of <li>
           .attr('class', 'legend');
 })
+
+
+let query = '';
+let searchInput = document.querySelector('.searchBar');
+searchInput.addEventListener('change', (event) => {
+  // update query value
+  query = event.target.value;
+  // filter projects
+  let filteredProjects = projects.filter((project) => {
+    let values = Object.values(project).join('\n').toLowerCase();
+    return values.includes(query.toLowerCase());
+  });
+  // render filtered projects
+  renderProjects(filteredProjects, projectsContainer, 'h2');
+});
+
 
 
