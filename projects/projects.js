@@ -65,5 +65,72 @@ searchInput.addEventListener('change', (event) => {
   renderProjects(filteredProjects, projectsContainer, 'h2');
 });
 
+// Function to Render Pie Chart
+function renderPieChart(projectsGiven) {
+    // Clear previous SVG elements & Legend
+    let newSVG = d3.select('svg');
+    newSVG.selectAll('path').remove();
+    
+    let legend = d3.select('.legend');
+    legend.html("");
+
+    // Aggregate project count per year
+    let newRolledData = d3.rollups(
+        projectsGiven,
+        (v) => v.length,
+        (d) => d.year
+    );
+
+    // Convert rolled-up data into an array
+    let newData = newRolledData.map(([year, count]) => ({
+        value: count,
+        label: year
+    }));
+
+    // Slice Generator
+    let newSliceGenerator = d3.pie().value((d) => d.value);
+    let newArcData = newSliceGenerator(newData);
+
+    // Arc Generator
+    let arcGenerator = d3.arc().innerRadius(0).outerRadius(50);
+
+    // Color Scale
+    let colors = d3.scaleOrdinal(d3.schemeTableau10);
+
+    // Append Pie Chart Slices
+    newSVG.selectAll('path')
+        .data(newArcData)
+        .enter()
+        .append('path')
+        .attr('d', arcGenerator)
+        .attr("fill", (d, i) => colors(i))
+        .attr('stroke', 'white');
+
+    // Render Legend
+    newData.forEach((d, idx) => {
+        legend.append('li')
+            .attr('style', `--color:${colors(idx)}`)
+            .html(`<span class="swatch"></span> ${d.label} <em>(${d.value})</em>`)
+            .attr('class', 'legend');
+    });
+}
+
+// Event Listener for Filtering
+searchInput.addEventListener('input', (event) => {
+    let query = event.target.value.toLowerCase();
+    
+    // Filter Projects
+    let filteredProjects = projects.filter((project) => {
+        let values = Object.values(project).join('\n').toLowerCase();
+        return values.includes(query);
+    });
+
+    // Update Projects & Pie Chart
+    renderProjects(filteredProjects, projectsContainer, 'h2');
+    renderPieChart(filteredProjects);
+});
+
+ 
+
 
 

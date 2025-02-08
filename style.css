@@ -188,6 +188,14 @@ div.container{
   display: inline-block;
   border: 1px solid #000; /* Adds a border around the swatch for clarity */
 /* } */ 
+&:has(path:hover) {
+  path:not(:hover) {
+    opacity: 0.5;
+  }
+}
+path {
+  transition: 300ms;
+}
 
 
 
