@@ -66,6 +66,7 @@ searchInput.addEventListener('change', (event) => {
 });
 
 // Function to Render Pie Chart
+// 
 function renderPieChart(projectsGiven) {
     // Clear previous SVG elements & Legend
     let newSVG = d3.select('svg');
@@ -129,6 +130,34 @@ searchInput.addEventListener('input', (event) => {
     renderProjects(filteredProjects, projectsContainer, 'h2');
     renderPieChart(filteredProjects);
 });
+let selectedIndex = -1;
+let svg = d3.select('svg');
+  svg.selectAll('path').remove();
+  arcs.forEach((arc, i) => {
+    svg
+      .append('path')
+      .attr('d', arc)
+      .attr('fill', colors(i))
+      .on('click', () => {
+        // Toggle selectedIndex
+        selectedIndex = selectedIndex === i ? -1 : i;
+
+        // Update pie chart selection
+        paths.attr('class', (_, idx) => (idx === selectedIndex ? 'selected' : ''));
+
+        // Update legend selection
+        legend.selectAll('li').attr('class', (_, idx) => (idx === selectedIndex ? 'selected' : ''));
+      });
+      
+      
+  });
+  if (selectedIndex === -1) {
+    renderProjects(projects, projectsContainer, 'h2');
+  } else {
+    // Filter projects based on the selected wedge's label (year)
+    let selectedYear = newData[selectedIndex].label;
+    let filteredProjects = projects.filter(project => project.year === selectedYear);
+  }
 
  
 
